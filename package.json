@@ -1,0 +1,75 @@
+{
+	"name": "vscode_polyglot",
+	"displayName": "NG2 Polyglot",
+	"description": "VSCode support for ng2_polyglot.",
+	"version": "1.0.0-dev",
+	"publisher": "thosakwe",
+	"engines": {
+		"vscode": "^1.8.0"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/thosakwe/vscode_polyglot/issues"
+	},
+	"homepage": "https://github.com/thosakwe/vscode_polyglot",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/thosakwe/vscode_polyglot.git"
+	},
+	"categories": [
+		"Languages",
+		"Snippets",
+		"Linters",
+		"Formatters",
+		"Debuggers"
+	],
+	"keywords": [
+		"dart",
+		"dartlang",
+		"polyglot",
+        "ng2_polyglot",
+        "angular2",
+        "angular",
+        "angulardart"
+	],
+    "activationEvents": [],
+	"main": "./build/web/extension.dart.js",
+	"contributes": {
+		"languages": [
+			{
+				"id": "ng2_polyglot",
+				"extensions": [
+					".i18n",
+                    ".i18n.dart",
+                    ".polyglot",
+                    ".polyglot.dart"
+				],
+				"aliases": [
+					"Polyglot",
+                    "NG2 Polyglot"
+				],
+				"configuration": "./syntaxes/polyglot-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "ng2_polyglot",
+				"scopeName": "source.polyglot",
+				"path": "./syntaxes/polyglot.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "ng2_polyglot",
+				"path": "./snippets/polyglot.json"
+			}
+		],
+		"commands": [
+			{
+				"command": "ng2_polyglot.build",
+				"title": "Compile Polyglot Source",
+				"category": "NG2 Polyglot"
+			}
+		]
+	}
+}

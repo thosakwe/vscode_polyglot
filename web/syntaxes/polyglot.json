@@ -1,0 +1,22 @@
+{
+    "fileTypes": [
+        "polyglot",
+        "ng2_polyglot"
+    ],
+    "foldingStartMarker": "\\{\\s*$",
+    "foldingStopMarker": "^\\s*\\}",
+    "name": "Polyglot",
+    "patterns": [
+        {
+            "begin": "\"",
+            "end": "\"",
+            "name": "string.quoted.double.ng2_polyglot",
+            "patterns": [
+                {
+                    "match": "\\n",
+                    "name": "invalid.string.newline"
+                }
+            ]
+        }
+    ]
+}

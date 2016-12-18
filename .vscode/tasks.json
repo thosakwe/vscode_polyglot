@@ -1,0 +1,9 @@
+{
+    "version": "0.1.0",
+    "command": "pub",
+    "isShellCommand": true,
+    "args": ["build"],
+    "showOutput": "always",
+    "echoCommand": true,
+    "suppressTaskName": true
+}
