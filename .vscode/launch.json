@@ -7,10 +7,9 @@
 			"request": "launch",
 			"runtimeExecutable": "${execPath}",
 			"args": [
-				"--extensionDevelopmentPath=${workspaceRoot}"
+				"--extensionDevelopmentPath=${workspaceRoot}/build/web"
 			],
-            "preLaunchTask": "dart",
-			"outDir":"${workspaceRoot}/out/src",
+            "preLaunchTask": "grind",
 			"stopOnEntry": false,
 			"sourceMaps": true
 		}

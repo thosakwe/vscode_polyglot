@@ -33,7 +33,7 @@
         "angulardart"
 	],
     "activationEvents": [],
-	"main": "./out/src/main.js",
+	"main": "out/src/extension/dart.js",
 	"contributes": {
 		"languages.old": [
 			{
