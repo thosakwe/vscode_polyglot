@@ -1,8 +1,8 @@
 {
     "version": "0.1.0",
-    "command": "pub",
+    "command": "dart",
     "isShellCommand": true,
-    "args": ["build"],
+    "args": ["tool/grind.dart", "build"],
     "showOutput": "always",
     "echoCommand": true,
     "suppressTaskName": true

@@ -33,9 +33,9 @@
         "angulardart"
 	],
     "activationEvents": [],
-	"main": "./build/web/extension.dart.js",
+	"main": "./out/src/main.js",
 	"contributes": {
-		"languages": [
+		"languages.old": [
 			{
 				"id": "ng2_polyglot",
 				"extensions": [
@@ -51,17 +51,11 @@
 				"configuration": "./syntaxes/polyglot-configuration.json"
 			}
 		],
-		"grammars": [
+		"grammars.old": [
 			{
 				"language": "ng2_polyglot",
 				"scopeName": "source.polyglot",
 				"path": "./syntaxes/polyglot.json"
-			}
-		],
-		"snippets": [
-			{
-				"language": "ng2_polyglot",
-				"path": "./snippets/polyglot.json"
 			}
 		],
 		"commands": [

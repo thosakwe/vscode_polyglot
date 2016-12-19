@@ -4,7 +4,8 @@ homepage: "https://github.com/thosakwe/vscode_polyglot.git"
 name: "vscode_polyglot"
 version: "1.0.0-dev"
 dependencies: 
-  polyglot: 
-    path: "../ng2_polyglot"
-  vscode: 
-    path: "../dart_vscode"
+  node_preamble: "^1.2.0"
+  polyglot: "^1.0.0-dev"
+  vscode: "^1.0.0"
+dev_dependencies: 
+  grinder: "^0.8.0+3"
