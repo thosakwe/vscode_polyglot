@@ -9,7 +9,7 @@
 			"args": [
 				"--extensionDevelopmentPath=${workspaceRoot}/build/web"
 			],
-            "preLaunchTask": "grind",
+            "preLaunchTask": "pub:build",
 			"stopOnEntry": false,
 			"sourceMaps": true
 		}

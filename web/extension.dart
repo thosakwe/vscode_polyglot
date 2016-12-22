@@ -1,19 +1,15 @@
-//import 'dart:html';
-import 'dart:js';
+import 'package:js/js.dart';
 import 'package:vscode/vscode.dart' as vs;
+import 'exports.dart';
 
 main() {
-  var exports = context['module']['exports'];
-  print(exports);
-  exports['activate'] = (ctx) => activate(ctx);
-  exports['deactivate'] = () => deactivate();
-  print(exports);
+  exports
+    ..activate = allowInterop(activate)
+    ..deactivate = allowInterop(deactivate);
 }
 
 void activate(vs.ExtensionContext context) {
-  print('Hello!');
+  print('Ok');
 }
 
-void deactivate() {
-
-}
+void deactivate() {}

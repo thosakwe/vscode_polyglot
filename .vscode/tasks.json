@@ -1,9 +1,25 @@
 {
     "version": "0.1.0",
-    "command": "grind",
+    "command": "pub",
     "isShellCommand": true,
-    "args": ["build"],
     "showOutput": "always",
     "echoCommand": true,
-    "suppressTaskName": true
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "pub:build",
+            "suppressTaskName": true,
+            "args": [
+                "build"
+            ]
+        },
+        {
+            "taskName": "grinder:build",
+            "suppressTaskName": true,
+            "args": [
+                "run",
+                "grinder"
+            ]
+        }
+    ]
 }
